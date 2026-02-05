@@ -5,9 +5,9 @@ Styling: TailwindCSS
 UI Library: React-icons
 State Management: 
 
-## Getting
+## Getting Started
 1. run following command to install necessary packages
 npm install
 
-2-1. Run with production environment
+2. Run with production environment
 npm run dev
