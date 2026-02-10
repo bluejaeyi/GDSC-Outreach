@@ -47,6 +47,17 @@ export default app;
 */
 
 // Placeholder exports for development
-export const auth = null;
-export const db = null;
-export default null;
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAnAgvJFPkxt-o1Mce_z_EiauOYQC-GCTQ",
+  authDomain: "email-generator-8931d.firebaseapp.com",
+  projectId: "email-generator-8931d",
+  storageBucket: "email-generator-8931d.firebasestorage.app",
+  messagingSenderId: "657508278524",
+  appId: "1:657508278524:web:2de9e6731f6920d0ff3779"
+};
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
